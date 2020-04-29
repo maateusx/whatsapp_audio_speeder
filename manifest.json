@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Whatsapp Audio Speeder - Speed Controller for Whatsapp",
+  "name": "Audio Speeder - Controller for Whatsapp",
   "description": "Add simple speed control to your audios on WhatsApp Web. Listen to those long recordings in no time.",
   "version": "1.0",
   "content_scripts": [{

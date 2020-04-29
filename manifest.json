@@ -1,12 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Whatsapp Audio Speeder - Speed Controller for Whatsapp",
-  "description": "Add simple speed control to your audios on WhatsApp Web. Listen to those long recordings in no time.\nAudio Speeder is an extension built to work with WhatsApp Web. It adds controls to the audio on chat, which let you change the speed of recordings.\n\nHOW TO\n\nA select will appear on audio message, wirh all the controls needed to tweak the audio recordings in WhatsApp Web.\nTo change speed, just press on the Speed Selection Box and choose your speed.\n\n\n[Português]\nAdicione controle de velocidade simples aos seus áudios no WhatsApp Web. Ouça essas gravações longas em pouco tempo.\nAudio Speeder é uma extensão criada para funcionar com o WhatsApp Web. Ele adiciona controles ao áudio do bate-papo, que permitem alterar a velocidade das gravações.\n\nCOMO USAR\n\nUma seleção aparecerá na mensagem de áudio, com todos os controles necessários para ajustar as gravações de áudio no WhatsApp Web.\n\nPara alterar a velocidade, basta pressionar na caixa de seleção de velocidade e escolher sua velocidade.\n\n\n[Espanol]\nAgregue un control de velocidad simple a sus audios en WhatsApp Web. Escuche estas largas grabaciones en poco tiempo.\nAudio Speeder es una extensión creada para trabajar con WhatsApp Web. Agrega controles al audio del chat, lo que le permite cambiar la velocidad de las grabaciones.\n\nCÓMO USAR\n\nAparecerá una selección en el mensaje de audio, con todos los controles necesarios para ajustar las grabaciones de audio en WhatsApp Web.\n\nPara cambiar la velocidad, simplemente presione el cuadro de selección de velocidad y elija su velocidad.",
+  "description": "Add simple speed control to your audios on WhatsApp Web. Listen to those long recordings in no time.",
   "version": "1.0",
-  "browser_action": {
-    "default_icon": "images/128x128.png",
-    "default_popup": "index.html"
-  },
   "content_scripts": [{
     "matches": ["https://web.whatsapp.com/*"],
     "js": ["background.js"],

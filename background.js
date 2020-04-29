@@ -1,3 +1,4 @@
+try {
 document.addEventListener("DOMContentLoaded", () => {
   var WS_alreadyStarted = false;
   var alreadyInjectedOnChange = false;
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   if (hasAudio && !alreadyUpdated) {
                     if (!alreadyInjectedOnChange) WS_injectFunctionOnChange(message)
                     const auxElement = document.createElement('div')
-                    auxElement.innerHTML = "<div style='right: 125px; position: absolute; bottom: 3px;'><label for='WS_audioSpeed'><span class='_1DZAH'>Speed:</span></label><select id='WS_audioSpeed' onchange='WS_onChangeSpeed(value)' class='WS_selectSpeed _1DZAH _2hrew' style='line-height: normal !important; padding: 0px !important; width: auto !important; margin-left: 3px !important; text-align-last: center !important;'><option class='_3EFt_' value='0.25'>0.25</option><option class='_3EFt_' value='0.5'>0.5</option><option class='_3EFt_' value='0.75'>0.75</option><option class='_3EFt_' value='1' selected>Normal</option><option class='_3EFt_' value='1.25'>1.25</option><option class='_3EFt_' value='1.5'>1.5</option><option class='_3EFt_' value='1.75'>1.75</option><option class='_3EFt_' value='2'>2.0</option></select></div>";
+                    auxElement.innerHTML = "<div style='right: 145px; position: absolute; bottom: 3px;'><label for='WS_audioSpeed'><span class='_1DZAH'>Speed:</span></label><select id='WS_audioSpeed' onchange='WS_onChangeSpeed(value)' class='WS_selectSpeed _1DZAH _2hrew' style='line-height: normal !important; padding: 0px !important; width: auto !important; margin-left: 3px !important; text-align-last: center !important;'><option class='_3EFt_' value='0.25'>0.25</option><option class='_3EFt_' value='0.5'>0.50</option><option class='_3EFt_' value='0.75'>0.75</option><option class='_3EFt_' value='0.9'>0.90</option><option class='_3EFt_' value='1' selected>Normal</option><option class='_3EFt_' value='1.25'>1.25</option><option class='_3EFt_' value='1.5'>1.50</option><option class='_3EFt_' value='1.75'>1.75</option><option class='_3EFt_' value='2'>2.00</option><option class='_3EFt_' value='2.25'>2.25</option><option class='_3EFt_' value='2.5'>2.50</option></select></div>";
                     message.appendChild(auxElement.firstChild);
                   }
                 }
@@ -66,3 +67,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (window.location.host === 'web.whatsapp.com' && !WS_alreadyStarted) WS_init();    
 }, false);
+} catch(e) {
+}
